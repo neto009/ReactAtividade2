@@ -16,7 +16,13 @@ const App = () => {
           <Image source={sacola} style={styles.imageSacola} />
         </View>
       </View>
-      <Text style={styles.textCenter}>---------- Categorias ----------</Text>
+      <View style={{paddingLeft: 90,flexDirection: 'row', alignItems: 'center', justifyContent:"center" , width: 300}}>
+        <View style={{flex: 3, height: 1, backgroundColor: '#C8C5C2'}} />
+        <View>
+          <Text style={{width: 70, textAlign: 'center', color: "#C8C5C2"}}>Categorias</Text>
+        </View>
+        <View style={{flex: 3, height: 1, backgroundColor: '#C8C5C2' }} />
+      </View>
 
       <View style={styles.boxImagem}>
         <ContainerImage />

@@ -5,10 +5,10 @@ import imagem2 from "./assets/img/ceilinglamps.png";
 export default function ContainerImage() {
   return (
     <View style={styles.linhaPlacas}>
-      <View>
+      <View style={styles.containerImage}>
         <Image source={imagem1} style={styles.image} />
       </View>
-      <View>
+      <View style={styles.containerImage}>
         <Image source={imagem2} style={styles.image} />
       </View>
     </View>
@@ -17,8 +17,8 @@ export default function ContainerImage() {
 
 const styles = StyleSheet.create({
   image: {
-    width: 100,
-    height: 100,
+    width: 120,
+    height: 120,
   },
 
   linhaPlacas: {
@@ -26,9 +26,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+  },
+
+  containerImage: {
     backgroundColor: "#FFFFFF",
     borderRadius: 20,
-    margin: 20,
-    padding: 30,
-  },
+    margin: 10,
+    padding: 20,
+  }
 });
