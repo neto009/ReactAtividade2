@@ -1,4 +1,4 @@
-import { Image, View, StyleSheet } from "react-native";
+import { Image, View, StyleSheet, Text } from "react-native";
 import imagem1 from "./assets/img/lightdecor.png";
 import imagem2 from "./assets/img/garlands.png";
 
@@ -7,9 +7,11 @@ export default function ContainerImage() {
     <View style={styles.linhaPlacas}>
       <View style={styles.containerImage}>
         <Image source={imagem1} style={styles.image} />
+        <Text style={styles.textImage}>Lâmpada</Text>
       </View>
       <View style={styles.containerImage}>
         <Image source={imagem2} style={styles.image} />
+        <Text style={styles.textImage}>Luminaria de praça</Text>
       </View>
     </View>
   );
@@ -17,8 +19,9 @@ export default function ContainerImage() {
 
 const styles = StyleSheet.create({
   image: {
-    width: 120,
-    height: 120,
+    flex: 1,
+    width: 50,
+    height: 50,
   },
 
   linhaPlacas: {
@@ -29,9 +32,19 @@ const styles = StyleSheet.create({
   },
 
   containerImage: {
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: "#FFFFFF",
     borderRadius: 20,
     margin: 10,
     padding: 20,
+    width: 160,
+    height: 160
+  },
+
+  textImage: {
+    color: "#C8C5C2",
+    paddingTop: 10,
+    fontSize: 13
   }
 });

@@ -16,10 +16,10 @@ const Main = () => {
             <Image source={sacola} style={styles.imageSacola} />
         </View>
         </View>
-        <View style={{paddingLeft: 90,flexDirection: 'row', alignItems: 'center', justifyContent:"center" , width: 300}}>
+        <View style={{paddingLeft: 35,flexDirection: 'row', alignItems: 'center', justifyContent:"center" , width: 370}}>
         <View style={{flex: 3, height: 1, backgroundColor: '#C8C5C2'}} />
         <View>
-            <Text style={{width: 70, textAlign: 'center', color: "#C8C5C2"}}>Categorias</Text>
+            <Text style={{width: 85, textAlign: 'center', color: "#C8C5C2"}}>Categorias</Text>
         </View>
         <View style={{flex: 3, height: 1, backgroundColor: '#C8C5C2' }} />
         </View>
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
     color: "#000",
     fontSize: 30,
     fontWeight: "bold",
+    paddingRight: 100
   },
   header: {
     flexDirection: "row",
