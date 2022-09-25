@@ -19,17 +19,17 @@ const Main = () => {
         </View>
         </View>
         <View style={{paddingLeft: 35,flexDirection: 'row', alignItems: 'center', justifyContent:"center" , width: 370}}>
-        <View style={{flex: 3, height: 1, backgroundColor: '#C8C5C2'}} />
+          <View style={{flex: 3, height: 1, backgroundColor: '#C8C5C2'}} />
         <View>
             <Text style={{width: 85, textAlign: 'center', color: "#C8C5C2"}}>Categorias</Text>
         </View>
-        <View style={{flex: 3, height: 1, backgroundColor: '#C8C5C2' }} />
+          <View style={{flex: 3, height: 1, backgroundColor: '#C8C5C2' }} />
         </View>
 
         <View style={styles.boxImagem}>
-        <ContainerImage />
-        <ContainerImage2 />
-        <ContainerImage3 />
+          <ContainerImage />
+          <ContainerImage2 />
+          <ContainerImage3 />
         </View>
     </View>
   );
