@@ -13,7 +13,9 @@ const Main = () => {
             <Text style={styles.title}>Lighteria</Text>
         </View>
         <View>
-            <Image source={sacola} style={styles.imageSacola} />
+            <View style={styles.backgroundSacola}>
+              <Image source={sacola} style={styles.imageSacola} />
+            </View>
         </View>
         </View>
         <View style={{paddingLeft: 35,flexDirection: 'row', alignItems: 'center', justifyContent:"center" , width: 370}}>
@@ -40,11 +42,18 @@ const styles = StyleSheet.create({
   },
 
   imageSacola: {
-    width: 40,
-    height: 40,
+    width: 25,
+    height: 25,
+  },
+
+  backgroundSacola: {
     backgroundColor: "#FFFFFF",
     marginLeft: 40,
     borderRadius: 30,
+    width: 40,
+    height: 40,
+    alignItems: "center",
+    justifyContent: "center"
   },
 
   textCenter: {
