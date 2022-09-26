@@ -1,8 +1,6 @@
 import { StyleSheet, StatusBar, Text, View, Image } from "react-native";
 import sacola from "./assets/img/icone-sacola.png";
-import ContainerImage from "./ContainerImage";
-import ContainerImage2 from "./ContainerImage2";
-import ContainerImage3 from "./ContainerImage3";
+import Data from "./Data";
 
 const Main = () => {
   return (
@@ -27,9 +25,7 @@ const Main = () => {
         </View>
 
         <View style={styles.boxImagem}>
-          <ContainerImage />
-          <ContainerImage2 />
-          <ContainerImage3 />
+          <Data/>
         </View>
     </View>
   );
