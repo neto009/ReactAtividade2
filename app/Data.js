@@ -46,7 +46,7 @@ const produtos = [
 
 export default function Data() {
   return (
-    <View style={styles.linhaPlacas}>
+    <View>
         <FlatList
             data={produtos}
             numColumns={2}
@@ -74,13 +74,6 @@ const styles = StyleSheet.create({
       flex: 1,
       width: 40,
       height: 40,
-    },
-  
-    linhaPlacas: {
-      flex: 1,
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "space-between",
     },
   
     containerImage: {
